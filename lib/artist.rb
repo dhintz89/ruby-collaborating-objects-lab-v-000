@@ -15,7 +15,7 @@ class Artist
     @@all << self
   end
   
-  def self.find_or_create_by_name(name)
+  def self.find_or_create_by_name
     if @@all.select(name) == nil
       artist = self.new(name)
     else
