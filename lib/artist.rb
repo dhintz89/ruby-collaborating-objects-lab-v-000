@@ -19,7 +19,7 @@ class Artist
     @@all.select {|val| val.name == artist_name}
     @@all.each do |val| 
       if val.name == artist_name
-        val 
+        val
       else 
         artist = self.new(artist_name)}
       end
