@@ -16,8 +16,8 @@ class Artist
   end
   
   def self.find_or_create_by_name(artist_name)
-    if @all.any? {|val| val.name == artist_name}
-      @all.first {|val| val.name == artist_name}
+    if @@all.any? {|val| val.name == artist_name}
+      @@all.first {|val| val.name == artist_name}
     else
       artist = self.new(artist_name)
     end
