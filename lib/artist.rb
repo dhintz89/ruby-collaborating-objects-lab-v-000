@@ -19,7 +19,7 @@ class Artist
     if @@all.select {|name| name == nil}
       artist = self.new(name)
     else
-      @@all.select{|name| name == nil}
+      @@all.select{|name| name}
     end
   end
   
