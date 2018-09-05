@@ -16,11 +16,7 @@ class Artist
   end
   
   def self.find_or_create_by_name(artist_name)
-    if @@all.select {|name| name == artist_name}
-      @@all.select{|name| name == artist_name}
-    else
-      artist = self.new(artist_name)
-    end
+    @@all.each {|val| val.name == artist_name ? val : artist = self.new(artist_name)}
   end
   
   def print_songs
