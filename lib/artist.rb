@@ -20,14 +20,7 @@ class Artist
       @all.first {|val| val.name == artist_name}
     else
       artist = self.new(artist_name)}
-    
-    @@all.select {|val| val.name == artist_name}
-    @@all.each do |val| 
-      if val.name == artist_name
-        val
-      end
     end
-    artist = self.new(artist_name)}
   end
   
   def print_songs
