@@ -19,7 +19,7 @@ class Artist
     if @all.any? {|val| val.name == artist_name}
       @all.first {|val| val.name == artist_name}
     else
-      artist = self.new(artist_name)}
+      artist = self.new(artist_name)
     end
   end
   
