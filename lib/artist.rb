@@ -20,10 +20,9 @@ class Artist
     @@all.each do |val| 
       if val.name == artist_name
         val
-      else 
-        artist = self.new(artist_name)}
       end
     end
+    artist = self.new(artist_name)}
   end
   
   def print_songs
