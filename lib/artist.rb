@@ -16,6 +16,7 @@ class Artist
   end
   
   def self.find_or_create_by_name(artist_name)
+    @@all.select {|val| val.name == artist_name}
     @@all.each do |val| 
       if val.name == artist_name
         val 
