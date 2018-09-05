@@ -15,11 +15,11 @@ class Artist
     @@all << self
   end
   
-  def self.find_or_create_by_name(name)
+  def self.find_or_create_by_name(artist_name)
     if @@all.select {|name| name == nil}
-      artist = self.new(name)
+      artist = self.new(artist_name)
     else
-      @@all.select{|name| name}
+      @@all.select{|name| name == artist_name}
     end
   end
   
